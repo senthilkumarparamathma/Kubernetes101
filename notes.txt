@@ -1,0 +1,20 @@
+
+
+# Port-forwading:
+kubectl port-forward pod/my-nginx-5975c9f858-qs9wn 8083:80
+  --  use kubectl get pods  - abd get pod name
+  -- my-nginx-5975c9f858-qs9wn  
+
+
+# ip of pod
+kubectl get pod my-nginx-5975c9f858-qs9wn -o yaml
+
+   -- get podIP  in the yaml o/pod
+
+# delete service 
+   -- kubectl delete service <service name>
+       kubectl delete service nginx-clusterip
+
+
+
+      
